@@ -1,0 +1,56 @@
+.card {
+    width: 340px;
+    height: 340px;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    animation: fadeInUp 600ms ease-in-out;
+    overflow: hidden;
+  
+  
+    &_img {
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+      border-radius: inherit;
+      transform: scale(1);
+      transition: transform 300ms;
+    }
+  
+    &_title {
+      position: absolute;
+      bottom: 0;
+      margin: 15px 20px;
+      color: white;
+      box-sizing: inherit;
+      font-size: 14px;
+      text-align: left;
+    }
+  
+    &_overlay {
+      position: absolute;
+      top: 0;
+      background: linear-gradient(rgba(255, 255, 255, 0) 0%, #00000080);
+      height: 100%;
+      width: 100%;
+      border-radius: inherit;
+      
+    }
+    &:hover {
+      > .card_img {
+        transform: scale(1.01);
+      }
+    }
+   
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(5px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

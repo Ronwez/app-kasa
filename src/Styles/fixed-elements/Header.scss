@@ -1,0 +1,24 @@
+ul{
+    font-size: 24px;
+    display: flex;
+    gap:50px;
+    list-style: none;
+}
+
+a{
+    color:red;
+    text-decoration: none;
+}
+
+img{
+    height:68px;
+}
+
+nav{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width:80%;
+    margin-top: 20px;
+}
