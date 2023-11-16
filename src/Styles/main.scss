@@ -1,5 +1,12 @@
-@import "./fixed-elements/Header.scss";
-@import "./home-page/Banner.scss";
-@import "./home-page/Cards.scss";
-@import "./home-page/Gallery.scss";
-@import "./fixed-elements/Footer.scss";
+@import "./layout/Header.scss";
+@import "./components/Banner.scss";
+@import "./components/Cards.scss";
+@import "./components/Gallery.scss";
+@import "./layout/Footer.scss";
+@import "./utils/mixins";
+@import "./utils/variables";
+@import "./components/Error_msg.scss";
+@import "./components/Collapse.scss";
+@import "./components/FicheLogement.scss";
+@import "./components/Tag.scss";
+@import "./components/Carrousel.scss";

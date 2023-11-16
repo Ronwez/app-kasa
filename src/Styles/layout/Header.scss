@@ -1,0 +1,50 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+img{
+    height:48px;
+    @include media-query(large){
+        height: 68px;
+    }
+}
+
+.header{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+
+    a{
+        color:#FF6060;
+        text-decoration: none;
+    }
+
+    ul{
+        display: flex;
+        list-style: none;
+        @include media-query(small){
+            font-size: 18px;
+            gap:20px;
+            }
+            @include media-query(large){
+            font-size: 24px;
+            gap:50px;
+            }
+
+        a.active{
+            text-decoration-line: underline;
+            color: #FF6060;
+        }
+                
+              
+              
+    }
+}
+
+.activeLink {
+    text-decoration: underline;
+    color: #FF6060;
+  }

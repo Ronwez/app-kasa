@@ -1,13 +1,11 @@
 import React from 'react'
-import ban from "../assets/paysage.png";
-import '../Styles/home-page/Banner.scss';
 
-function Banner() {
+function Banner({ image,texte }) {
   return (
     <div className="banner-img">
-                <img src={ban} alt="banner paysage" />
+                <img src={image} alt="Bannière" />
                 <div className="overlay"></div>
-                <p>Chez vous, partout et ailleurs</p>
+                <p>{texte}</p>
     </div>
   )
 }

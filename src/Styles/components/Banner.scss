@@ -1,0 +1,57 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+
+
+.banner-img {
+    position: relative; 
+    overflow: hidden;
+    @include media-query(small){
+      margin-top:30px;
+      height: 111px; 
+    }
+    @include media-query(large){
+      margin: 60px 0px 80px 0px;
+      height: 223px; 
+    }
+  
+    img {
+      width: 100%;
+      object-fit: cover;
+      height:100%;
+      border-radius: 15px;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.2); /* Fond semi-transparent pour assombrir l'image */
+        border-radius: 15px;
+      }
+  
+    p {
+      position: absolute;
+      color: white; 
+      padding: 10px;
+      @include media-query(small){
+        font-size: 20px;
+        top:25%;
+        left:0%;
+      }
+      @include media-query(medium){
+        font-size: 30px;
+        top:25%;
+        left:50%;
+        transform: translate(-50%, -50%); /* Centrez le texte précisément */
+      }
+      @include media-query(large){
+        font-size: 40px;
+        top: 35%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); /* Centrez le texte précisément */
+      }
+    }
+  }
+

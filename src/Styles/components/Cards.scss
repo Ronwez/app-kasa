@@ -1,12 +1,19 @@
-.card {
-    width: 340px;
-    height: 340px;
+@import "../utils/mixins";
+@import "../utils/variables";
+
+  .card {
+    width: 100%;
     position: relative;
     margin-bottom: 20px;
     border-radius: 10px;
     animation: fadeInUp 600ms ease-in-out;
     overflow: hidden;
-  
+    @include media-query(small){
+      height: 255px;
+    }
+    @include media-query(large){
+      height: 340px;
+    }
   
     &_img {
       width: inherit;

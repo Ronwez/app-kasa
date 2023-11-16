@@ -1,18 +1,20 @@
 import Header from "../Components/Header";
-import Error404 from "../Components/Error_message";
+import FicheLogement from "../Components/Logement/FicheLogement";
 import Footer from "../Components/Footer";
 import "../Styles/main.scss";
 
-const Error = () => {
+
+
+const Logement = () => {
     return (
-        <div className="Error-page">
+        <div className="logement-page">
         <Header />
         <main>
-        <Error404 />
+        <FicheLogement />
         </main>
         <Footer />
         </div>
     );
 }
 
-export default Error;
+export default Logement;

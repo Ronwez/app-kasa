@@ -1,0 +1,48 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+.err-page{
+    color:#FF6060;
+    @include flex-center;
+    flex-direction: column;
+
+    h1{
+        @include media-query(small){
+            font-size:96px;
+            margin:60px 40px;
+        }
+        @include media-query(medium){
+            font-size:120px;
+            margin:60px 40px;
+        }
+        @include media-query(large){
+            font-size:200px;
+            margin:80px 50px;
+        }
+    }
+
+    p{
+        @include media-query(small){
+            font-size:18px;
+            margin:80px;
+        }
+        @include media-query(medium){
+            font-size:24px;
+            margin:100px;
+        }
+        @include media-query(large){
+            font-size:30px;
+            margin:100px;
+        }
+    }
+
+    a{
+        color:#FF6060;
+        @include media-query(small){
+            font-size:14px;
+        }
+        @include media-query(large){
+            font-size:18px;
+        }
+    }
+}
