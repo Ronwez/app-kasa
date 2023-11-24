@@ -3,7 +3,7 @@ import Banner from "../Components/Banner";
 import Gallery from "../Components/Gallery";
 import Footer from "../Components/Footer";
 import imgHomeBanner from "../assets/homeBanner.png";
-import "../Styles/main.scss";
+
 
 
 const Home = () => {

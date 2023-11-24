@@ -19,9 +19,9 @@ function FicheLogement() {
   /* Équipements */
   const equipements = ficheLogement?.equipments.map((equipment, i) => {
     return (
-      <ul key={i}>
-        <li>{equipment}</li>
-      </ul>
+      <span key={i} >
+        {equipment}
+      </span>
     );
   });
 

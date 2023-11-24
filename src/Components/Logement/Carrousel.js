@@ -36,7 +36,7 @@ function Carrousel({ slides }) {
             className={index === current ? "slider active" : "slider"}
           >
             {index === current && (
-              <img src={image} alt="img-appartement" className="slide__image" />
+              <img src={image} alt="img-appartement"/>
             )}
             {index === current && length > 1 && (
               <span className="slider__number">

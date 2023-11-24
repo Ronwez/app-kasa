@@ -1,7 +1,6 @@
 import Header from "../Components/Header";
 import FicheLogement from "../Components/Logement/FicheLogement";
 import Footer from "../Components/Footer";
-import "../Styles/main.scss";
 
 
 
